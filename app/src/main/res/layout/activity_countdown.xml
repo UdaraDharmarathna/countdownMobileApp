@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountdownActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgimage"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Countdown"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/dateString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="40dp"/>
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/countdown_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:isHideTimeBackground="true"
+            app:isShowDay="true"
+            app:isShowHour="true"
+            app:isShowMillisecond="false"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:isTimeTextBold="true"
+            app:suffixGravity="bottom"
+            app:suffixDay="D"
+            app:suffixHour="H"
+            app:suffixMinute="M"
+            app:suffixSecond="S"
+            app:suffixTextColor="#ffffff"
+            app:suffixTextSize="20dp"
+            app:timeTextColor="#ffffff"
+            app:timeTextSize="40dp"
+            app:suffixDayLeftMargin="3dp"
+            android:layout_below="@+id/title"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
