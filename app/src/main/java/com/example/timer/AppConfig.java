@@ -10,5 +10,6 @@ public class AppConfig {
 
     public String getServerurl(){
         return this.serverurl;
+
     }
 }
